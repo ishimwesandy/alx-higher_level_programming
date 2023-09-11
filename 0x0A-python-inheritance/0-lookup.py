@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+"""lookup function."""
 
 
 def lookup(obj):
-    return dir(obj)
+    """Return a list of an object's ."""
+    return (dir(obj))
