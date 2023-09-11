@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-"""
-Defines a class-checking function.
-"""
+""" Defines list class MyList. """
 
 
-def is_same_class(obj, a_class):
- """
-Check if an object is exactly an instance of a given class.
-"""
-    if type(obj) == a_class:
-        return True
-    return False
+class MyList(list):
+
+
+    """ Built-in list class that do Sort. """
+
+    def print_sorted(self):
+
+
+        """ Print a  sorted list in ascending order. """
+        print(sorted(self))
