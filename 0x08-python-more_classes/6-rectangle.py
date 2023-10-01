@@ -3,8 +3,7 @@
 
 
 class Rectangle:
-    """Rectangle representation
-            """
+    """Rectangle representation """
 
     number_of_instances = 0
 
@@ -51,7 +50,6 @@ class Rectangle:
         return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
-    
         if self.__width == 0 or self.__height == 0:
             return ("")
 
@@ -63,12 +61,11 @@ class Rectangle:
         return ("".join(rec))
 
     def __repr__(self):
-        
+
         rec = "Rectangle(" + str(self.__width)
         rec += ", " + str(self.__height) + ")"
         return (rec)
 
     def __del__(self):
-        
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
